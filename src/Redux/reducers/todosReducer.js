@@ -13,7 +13,7 @@ const todosReducer = (state = initializeState, action) => {
             }
         case GET_TODOS_DATA:
             return {
-                ...state, todos: action.payload, isLoading: true, error: null
+                ...state, todos: action.payload, isLoading: false, error: null
             }
         case GET_TODOS_FAILED:
             return {
